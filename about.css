@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+
+body{
+   font-family:  "Open Sans", sans-serif;
+}
+.about-section {
+  position: relative;
+  padding: 120px 20px;
+  background-image: url("https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-1.2.1&auto=format&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.about-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.about-section .content {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 1;
+}
+.about-us {
+  font-size: 70px;
+  margin-bottom: 20px;
+  background-none;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #fff, #ddd);
+    font-weight: 400;
+    letter-spacing: 0.6rem;
+}
+
+.mission {
+  padding: 80px 20px;
+  text-align: center;
+  background: #fafafa;
+}
+.mission h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  letter-spacing: 0.6rem;
+  font-weight: 400;
+}
+.mission p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #444;
+}
+
+.why-us {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+}
+.why-us h3 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  letter-spacing: 0.6rem;
+  font-weight: 400;
+}
+.reasons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.reason i {
+  font-size: 40px;
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+.reason h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #222;
+  font-weight: 400;
+letter-spacing: 0.4rem;
+}
+.reason p {
+  font-size: 16px;
+  color: #555;
+}
+
+.team-section {
+  padding: 80px 20px;
+  background: #fafafa;
+}
+.team-section h3 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  letter-spacing: 0.6rem;
+  font-weight: 400;
+}
+.team-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.team-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  max-width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.team-card:hover {
+  transform: translateY(-8px);
+}
+.team-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.team-card h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.team-card p {
+  color: #555;
+  font-size: 14px;
+}
+.team-card .bio {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+    .about-us {
+        font-size: 40px;
+    }
+    .mission h3, .why-us h3, .team-section h3 {
+        font-size: 28px;
+    }
+    .reason i {
+        font-size: 30px;
+    }
+    .reason h4 {
+        font-size: 18px;
+    }
+    .team-card {
+        max-width: 100%;
+    }
+
+    .team-card img {
+        width: 100px;
+        height: 100px;
+
+    }
+    .team-card h4 {
+        font-size: 18px;
+    }
+
+    .team-card p {
+        font-size: 13px;
+    }
+
+    .team-card .bio {
+        font-size: 12px;
+    }
+}
